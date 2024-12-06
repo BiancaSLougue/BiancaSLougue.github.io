@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f9e3;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.container {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "introducao formacao"
+        "introducao habilidades"
+        "repositorios projetos"
+    ;
+    row-gap: 20px;
+    column-gap: 20px;
+    border: 10%;
+    border-radius: 10%;
+    margin: 10px;
+}
+    
+    
+
+
+header {
+    grid-area: header;
+    background-color: #cccff8;
+    padding: 30px;
+    margin: 30px;
+    border: #cccff8;
+    border-radius: 350%;
+    text-align: center;
+}
+
+#introducao {
+    grid-area: introducao;
+    background-color: #d5f9e6;
+    border: #d5f9e6;
+    border-radius: 4%;
+}
+
+#formacao {
+    grid-area: formacao;
+    background-color: #fcdbfb;
+    border: #fcdbfb;
+    border-radius: 4%;
+}
+
+#habilidades {
+    grid-area: habilidades;
+    background-color: #bed4f6;
+    border: #bed4f6;
+    border-radius: 4%;
+}
+
+#projetos {
+    grid-area: projetos;
+    background-color: #e0d4f3;
+    border: #e0d4f3;
+    border-radius: 4%;
+}
+
+#contato {
+    grid-area: contato;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#repositorios{
+    grid-area: repositorios;
+    background-color: #f7d0d0;
+    border:#f7d0d0;
+    border-radius: 4%;
+}
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+ul {
+    list-style: none
+}
+
+img {
+    height: 100px;
+}
+
+img:hover{
+    scale: 1.1;
+}
+
+h1 {
+    font-family: fonte;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: fonte;
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+    text-align: justify;
+}
+
+li {
+    font-size: 20px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: fonte;
+    src: url(./assets/DancingScript-Regular.otf);
+}
