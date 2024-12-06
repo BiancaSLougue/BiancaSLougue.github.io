@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     const ulProjeto = document.getElementById('projects')
 
-    fetch('http://api.github.com/users/BiancaSLougue/repos')
+    fetch('https://api.github.com/users/BiancaSLougue/repos')
     .then(response => response.json())
     .then(data => {
 
